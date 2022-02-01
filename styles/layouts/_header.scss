@@ -1,11 +1,34 @@
 .header {
   width: 100vw;
-  height: 50px;
+  height: 60px;
   border-bottom: 1px solid $border;
+
+  &-user-nav {
+    width: 100%;
+    padding: 20px 0;
+
+    .user-nav-list {
+      @include flexbox(end);
+
+      .user-nav-item {
+        @include text-style(13, $primary);
+        margin-right: 8px;
+
+        &:hover {
+          color: $blue;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 
   &-wrapper {
     @include flexbox(between);
-    height: 50px;
+    position: relative;
+    height: 60px;
 
     .header-menu,
     .header-search {
@@ -51,6 +74,43 @@
           .ic-search {
             color: $primary;
           }
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    height: 80px;
+
+    &-wrapper {
+      height: 80px;
+
+      .header-logo {
+        img {
+          width: 180px;
+        }
+      }
+
+      .header-menu,
+      .header-search {
+        button {
+          i {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    height: 140px;
+
+    &-wrapper {
+      height: 80px;
+
+      .header-logo {
+        img {
+          width: 200px;
         }
       }
     }
