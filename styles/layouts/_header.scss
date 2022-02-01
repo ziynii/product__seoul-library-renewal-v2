@@ -1,0 +1,58 @@
+.header {
+  width: 100vw;
+  height: 50px;
+  border-bottom: 1px solid $border;
+
+  &-wrapper {
+    @include flexbox(between);
+    height: 50px;
+
+    .header-menu,
+    .header-search {
+      @include flexbox;
+
+      button {
+        width: 32px;
+        height: 32px;
+
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .header-logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    .header-menu {
+      button {
+        .ic-menu {
+          color: $blue;
+        }
+
+        &:active {
+          .ic-menu {
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+
+    .header-search {
+      button {
+        .ic-search {
+          color: $secondary;
+        }
+
+        &:active {
+          .ic-search {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
