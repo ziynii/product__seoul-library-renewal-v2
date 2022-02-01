@@ -34,4 +34,27 @@
       }
     }
   }
+
+  @include responsive(T) {
+    &-slider {
+      margin-right: -40px;
+      margin-left: -40px;
+
+      .slider-control {
+        bottom: 16px;
+
+        .control-button {
+          width: 6px;
+          height: 6px;
+          margin: 0 4px;
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .slider-control {
+      bottom: 24px;
+    }
+  }
 }
