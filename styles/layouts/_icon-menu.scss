@@ -1,0 +1,41 @@
+.icon-menu {
+  @include pos-center-x;
+  width: 90%;
+  margin-bottom: 20px;
+
+  &-list {
+    @include flexbox(between, start);
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    @include column-flexbox;
+    width: 80px;
+    margin-bottom: 8px;
+    text-align: center;
+
+    &:active {
+      i,
+      p {
+        color: $blue;
+      }
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    i {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-size: 48px;
+      color: $secondary;
+    }
+
+    p {
+      @include text-style(13, $primary);
+      display: block;
+      color: $secondary;
+    }
+  }
+}
