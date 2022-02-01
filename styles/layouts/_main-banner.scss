@@ -1,0 +1,37 @@
+.mainbanner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &-slider {
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .main-slider-item {
+      img {
+        width: 100%;
+      }
+    }
+
+    .slider-control {
+      @include pos-center-x;
+      bottom: 8px;
+
+      .control-button {
+        width: 4px;
+        height: 4px;
+        margin: 0 2px;
+        background-color: $white;
+        border-radius: 50%;
+        opacity: 0.7;
+        transform: scale(1);
+        transition: transform 150ms ease-in-out;
+
+        &.tns-nav-active {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
