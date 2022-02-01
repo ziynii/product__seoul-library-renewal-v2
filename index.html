@@ -34,6 +34,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -320,6 +324,37 @@
       </div>
     </header>
 
-		
+    <section class="mainbanner">
+      <h2 class="visually-hidden">메인배너</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mainbanner-slider">
+              <div class="main-slider-list">
+                <div class="main-slider-item">
+                  <img src="./assets/images/slideImg/bn_01.jpg" alt="" />
+                </div>
+                <div class="main-slider-item">
+                  <img src="./assets/images/slideImg/bn_02.jpg" alt="" />
+                </div>
+                <div class="main-slider-item">
+                  <img src="./assets/images/slideImg/bn_03.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="slider-control">
+                <button type="button" class="control-button"></button>
+                <button type="button" class="control-button"></button>
+                <button type="button" class="control-button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/mainSlider.js"></script>
   </body>
 </html>
