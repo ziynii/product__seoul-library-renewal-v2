@@ -11,7 +11,7 @@
   &-item {
     @include column-flexbox;
     width: 30%;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     text-align: center;
 
     &:active {
@@ -42,10 +42,10 @@
   }
 
   @include responsive(T) {
-    width: 80%;
 
     &-item {
       width: 16.666%;
+      margin-bottom: 0;
 
       i {
         font-size: 60px;
