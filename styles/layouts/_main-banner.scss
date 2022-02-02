@@ -54,8 +54,13 @@
   }
 
   @include responsive(D) {
-    .slider-control {
-      bottom: 24px;
+    &-slider {
+      margin-right: 0;
+      margin-left: 0;
+
+      .slider-control {
+        bottom: 24px;
+      }
     }
   }
 }
