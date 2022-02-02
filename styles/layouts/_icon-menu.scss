@@ -10,7 +10,7 @@
 
   &-item {
     @include column-flexbox;
-    width: 80px;
+    width: 30%;
     margin-bottom: 8px;
     text-align: center;
 
@@ -30,12 +30,40 @@
       margin-bottom: 4px;
       font-size: 48px;
       color: $secondary;
+      transition: color 150ms ease-in-out;
     }
 
     p {
       @include text-style(13, $primary);
       display: block;
       color: $secondary;
+      transition: color 150ms ease-in-out;
+    }
+  }
+
+  @include responsive(T) {
+    width: 80%;
+
+    &-item {
+      width: 16.666%;
+
+      i {
+        font-size: 60px;
+      }
+
+      p {
+        @include text-style(14);
+      }
+
+      &:hover {
+        i {
+          color: $blue;
+        }
+
+        p {
+          color: $primary;
+        }
+      }
     }
   }
 }
