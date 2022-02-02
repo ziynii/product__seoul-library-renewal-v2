@@ -5,6 +5,7 @@
 
   &-item {
     @include text-style(18, $dark);
+    padding: 24px 0;
     margin-right: 24px;
     font-weight: 500;
 
@@ -15,7 +16,6 @@
     &.is-open {
       .gnb-depth {
         max-height: 320px;
-        border-color: $blue;
       }
     }
 
@@ -28,13 +28,13 @@
     @include flexbox(center, start);
 
     position: absolute;
-    top: 80px;
+    top: 79px;
     left: 0;
+    z-index: $gnb-level;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     background-color: $white;
-    border-bottom: 1px solid transparent;
     transition: max-height 200ms ease-in-out;
 
     &-list {
