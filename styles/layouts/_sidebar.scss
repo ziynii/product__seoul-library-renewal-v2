@@ -70,11 +70,12 @@
   &-search {
     @include flexbox;
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 16px;
 
     .search-input {
-      width: 80%;
+      width: 100%;
       padding: 8px 12px;
       border: 1px solid $border;
       border-radius: 4px;
@@ -82,7 +83,7 @@
 
     .search-button {
       position: absolute;
-      right: 48px;
+      right: 16px;
 
       i {
         font-size: 18px;
@@ -189,5 +190,18 @@
   @include responsive(T) {
     width: 70%;
     box-shadow: $dropdown-shadow;
+
+    &-header {
+      .auth {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    &-nav {
+      .side-depth-wrap {
+        height: 700px;
+      }
+    }
   }
 }
