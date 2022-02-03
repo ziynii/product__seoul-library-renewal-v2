@@ -1,3 +1,5 @@
+'use strict'
+
 const item = document.querySelectorAll('.gnb-nav-item')
 
 for (let i = 0; i < item.length; i++) {
