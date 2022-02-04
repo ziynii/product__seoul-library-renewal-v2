@@ -1,6 +1,6 @@
 .icon-menu {
-  @include pos-center-x;
   width: 90%;
+  margin: 0 auto;
   margin-bottom: 20px;
 
   &-list {
@@ -42,7 +42,6 @@
   }
 
   @include responsive(T) {
-
     &-item {
       width: 16.666%;
       margin-bottom: 0;
