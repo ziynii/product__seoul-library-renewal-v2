@@ -401,6 +401,145 @@
       </div>
     </div>
 
+    <div class="main-book">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="book-tab-list">
+              <li class="book-tab-item is-active" data-tab="tab1">
+                <button class="tab-button">신간도서</button>
+              </li>
+              <li class="book-tab-item" data-tab="tab2">
+                <button class="tab-button">인기도서</button>
+              </li>
+            </ul>
+
+            <div class="book-content-wrapper">
+              <div class="book-content is-select" id="tab1">
+                <ul class="book-slide-list" id="new-book">
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/new01.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>터키 갬빗</strong>
+                          <p>보리스 아쿠닌</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/new02.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>레인보우 스테이트 살인사건</strong>
+                          <p>윤민채</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/new03.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>노킹 온 록트 도어</strong>
+                          <p>아오사키 유고</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/new04.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>베토벤 현악 사중주</strong>
+                          <p>나성인</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/new05.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>메이지유신을 설계한 최후의 사무라이들</strong>
+                          <p>박훈</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="book-content" id="tab2">
+                <ul class="book-slide-list" id="best-book">
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/best01.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>채식주의자</strong>
+                          <p>한강</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/best02.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>여행의 이유</strong>
+                          <p>김영하</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/best03.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>천년의 질문</strong>
+                          <p>조정래</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/best04.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>돈으로 살수없는 것들</strong>
+                          <p>마이클 샌델</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="book-slide-item">
+                    <a href="/">
+                      <div class="book-item-detail">
+                        <img src="./assets/images/bookImg/best05.jpg" alt="" />
+                        <div class="detail-text">
+                          <strong>소년이 온다</strong>
+                          <p>한강</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -430,10 +569,7 @@
                 <dl>
                   <div class="time">
                     <dt>이용시간</dt>
-                    <dd>
-                      화-금 09:00 ~ 19:00 /
-                      토,일 09:00 ~ 17:00
-                    </dd>
+                    <dd>화-금 09:00 ~ 19:00 / 토,일 09:00 ~ 17:00</dd>
                   </div>
                   <div class="off">
                     <dt>휴관</dt>
@@ -822,6 +958,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/mainSlider.js"></script>
     <script src="./js/gnbDepthOpen.js"></script>
-    <script src="./js/_sidebarTab.js"></script>
+    <script src="./js/sidebarTab.js"></script>
+    <script src="./js/bookTab.js"></script>
+    <script src="./js/bookSlider.js"></script>
   </body>
 </html>
