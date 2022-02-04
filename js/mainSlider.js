@@ -1,4 +1,4 @@
-var mainSlider = tns({
+const mainSlider = tns({
   container: '.main-slider-list',
   navContainer: '.slider-control',
   controls: false,
