@@ -1,20 +1,39 @@
 .main-book {
-  position: relative;
   height: 442px;
   padding: 20px 0;
   background-color: $background;
 
+  .main-book-wrapper {
+    position: relative;
+  }
+
   .tns-controls {
     position: absolute;
-    top: 24px;
+    top: 4px;
     right: 15px;
 
     button {
+      width: 28px;
+      height: 28px;
       color: $white;
       background-color: $blue;
+      border-radius: 50%;
 
       &:active {
         background-color: $blue-dark;
+      }
+
+      &:hover {
+        background-color: $blue-dark;
+      }
+
+      &[disabled] {
+        cursor: default;
+        background-color: $blue-light;
+
+        &:hover {
+          background-color: $blue-light;
+        }
       }
 
       i {
@@ -24,11 +43,18 @@
 
       &:first-child {
         margin-right: 4px;
-        transform: rotate(90deg);
+
+        i {
+          margin-left: -3px;
+          transform: rotate(90deg);
+        }
       }
 
       &:last-child {
-        transform: rotate(-90deg);
+        i {
+          margin-right: -3px;
+          transform: rotate(-90deg);
+        }
       }
     }
   }
@@ -74,19 +100,20 @@
       &-item {
         .book-item-detail {
           @include column-flexbox;
-          width: 95%;
+          width: 100%;
 
           img {
             width: 100%;
             height: 248px;
             margin-bottom: 8px;
+            box-shadow: $dropdown-shadow;
           }
 
           .detail-text {
             text-align: center;
 
             strong {
-              @include text-style(18);
+              @include text-style(16);
               margin-bottom: 4px;
             }
 
@@ -101,7 +128,7 @@
 
   @include responsive(T) {
     .tns-controls {
-      right: 30px;
+      right: 0;
     }
   }
 
@@ -114,10 +141,13 @@
 
     .book-content {
       width: 90%;
+      margin: 0 auto;
 
       .book-slide {
         &-item {
           width: 180px;
+          box-shadow: -10px 0 13px -7px rgba($dark, 0.4),
+            10px 0 13px -7px rgba($dark, 0.4), 5px 5px 15px 2px rgba(0, 0, 0, 0);
 
           .book-item-detail {
             position: relative;
