@@ -1,6 +1,8 @@
 .main-book {
-  height: 442px;
-  padding: 20px 0;
+  padding: 24px 8px;
+  margin-right: -15px;
+  margin-bottom: 48px;
+  margin-left: -15px;
   background-color: $background;
 
   .main-book-wrapper {
@@ -127,12 +129,19 @@
   }
 
   @include responsive(T) {
+    padding: 24px;
+    margin-right: -45px;
+    margin-left: -45px;
+
     .tns-controls {
       right: 0;
     }
   }
 
   @include responsive(D) {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
     background-color: $white;
 
     .book-tab-list {
