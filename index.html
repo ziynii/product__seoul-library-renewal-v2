@@ -642,48 +642,134 @@
             </section>
           </div>
 
-          <div class="col-sm-4 col-lg-4">
-            <div class="calendar">
-              <div class="calendar-header">
-                <div class="calendar-year-month"></div>
-                <div class="calendar-nav">
-                  <button
-                    type="button"
-                    class="calendar-nav-button go-prev"
-                    aria-label="이전달로 이동"
-                  >
-                    <i class="ic-chevron" aria-hidden></i>
-                  </button>
-                  <button type="button" class="calendar-nav-button go-today">
-                    Today
-                  </button>
-                  <button
-                    type="button"
-                    class="calendar-nav-button go-next"
-                    aria-label="다음달로 이동"
-                  >
-                    <i class="ic-chevron" aria-hidden></i>
-                  </button>
+          <section class="library-schedule main-content-section">
+            <h2 class="library-schedule-title">도서관 행사 및 일정</h2>
+            <div class="library-schedule-wrapper">
+              <div class="col-sm-4 col-md-6 col-lg-8">
+                <div class="event">
+                  <ul class="event-list">
+                    <li class="event-item">
+                      <a href="/">
+                        <img
+                          src="./assets/images/eventImg01.jpg"
+                          alt="헌책 팔고, 헌책 사자! 온라인 한 평 책방 개최"
+                        />
+
+                        <div class="textbox">
+                          <span class="red">도서관 소식</span>
+                          <strong
+                            >헌책 팔고, 헌책 사자! 온라인 "한 평 책방"
+                            개최</strong
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="event-item">
+                      <a href="/">
+                        <img
+                          src="./assets/images/eventImg02.jpg"
+                          alt="Book택트: 코로나 시대 온라인 독서습관"
+                        />
+
+                        <div class="textbox">
+                          <span class="blue">도서관 갤러리</span>
+                          <strong>
+                            &#91;Book택트: 코로나 시대 온라인 독서습관&#93;
+                            <br />전자자료 테마전시
+                          </strong>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="event-item">
+                      <a href="/">
+                        <img
+                          src="./assets/images/eventImg03.jpg"
+                          alt="책피는 서울도서관 전자책 카드리뷰"
+                        />
+
+                        <div class="textbox">
+                          <span class="blue">도서관 갤러리</span>
+                          <strong
+                            >&#91;책피는 서울도서관&#93; 전자책
+                            카드리뷰</strong
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li class="event-item">
+                      <a href="/">
+                        <img
+                          src="./assets/images/eventImg04.jpg"
+                          alt="책피는 서울도서관 북큐레이션"
+                        />
+
+                        <div class="textbox">
+                          <span class="blue">도서관 갤러리</span>
+                          <strong
+                            >&#91;책피는 서울도서관&#93;
+                           북큐레이션</strong
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="event-slider-controls">
+										<button type="button" class="prev-button">
+											<i class="ic-chevron"></i>
+										</button>
+										<button type="button" class="next-button">
+											<i class="ic-chevron"></i>
+										</button>
+									</div>
                 </div>
               </div>
-              <div class="calendar-content">
-                <div class="calendar-days">
-                  <div class="calendar-day">일</div>
-                  <div class="calendar-day">월</div>
-                  <div class="calendar-day">화</div>
-                  <div class="calendar-day">수</div>
-                  <div class="calendar-day">목</div>
-                  <div class="calendar-day">금</div>
-                  <div class="calendar-day">토</div>
-                </div>
-                <div class="calendar-dates"></div>
-                <div class="captiontext">
-                  <i class="ic-clock"></i>
-                  <p>월요일과 공휴일은 휴관입니다</p>
+              <div class="col-sm-4 col-md-6 col-lg-4">
+                <div class="calendar">
+                  <div class="calendar-header">
+                    <div class="calendar-year-month"></div>
+                    <div class="calendar-nav">
+                      <button
+                        type="button"
+                        class="calendar-nav-button go-prev"
+                        aria-label="이전달로 이동"
+                      >
+                        <i class="ic-chevron" aria-hidden></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="calendar-nav-button go-today"
+                      >
+                        Today
+                      </button>
+                      <button
+                        type="button"
+                        class="calendar-nav-button go-next"
+                        aria-label="다음달로 이동"
+                      >
+                        <i class="ic-chevron" aria-hidden></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="calendar-content">
+                    <div class="calendar-days">
+                      <div class="calendar-day">일</div>
+                      <div class="calendar-day">월</div>
+                      <div class="calendar-day">화</div>
+                      <div class="calendar-day">수</div>
+                      <div class="calendar-day">목</div>
+                      <div class="calendar-day">금</div>
+                      <div class="calendar-day">토</div>
+                    </div>
+                    <div class="calendar-dates"></div>
+                    <div class="captiontext">
+                      <i class="ic-clock"></i>
+                      <p>월요일과 공휴일은 휴관입니다</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </main>
@@ -1104,11 +1190,10 @@
     <div class="overlay md-only"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="./js/mainSlider.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="./js/gnbDepthOpen.js"></script>
     <script src="./js/sidebarTab.js"></script>
     <script src="./js/bookTab.js"></script>
-    <script src="./js/bookSlider.js"></script>
     <script src="./js/calendar.js"></script>
   </body>
 </html>
