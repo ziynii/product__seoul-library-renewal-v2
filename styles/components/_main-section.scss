@@ -1,0 +1,11 @@
+.main-content-section {
+  margin-bottom: 24px;
+
+  @include responsive(T) {
+    margin-bottom: 36px;
+  }
+
+  @include responsive(D) {
+    margin-bottom: 48px;
+  }
+}

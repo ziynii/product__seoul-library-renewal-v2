@@ -1,7 +1,7 @@
 .icon-menu {
   width: 90%;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   &-list {
     @include flexbox(between, start);
