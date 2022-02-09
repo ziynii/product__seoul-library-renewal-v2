@@ -16,6 +16,7 @@
     &.is-open {
       .gnb-depth {
         max-height: 320px;
+        box-shadow: $dropdown-shadow;
       }
     }
 
