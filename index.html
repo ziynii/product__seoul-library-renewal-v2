@@ -395,15 +395,15 @@
               <h2 class="visually-hidden">신간도서와 인기도서</h2>
               <div class="main-book-wrapper">
                 <ul class="book-tab-list">
-                  <li class="book-tab-item is-active" data-tab="tab1">
+                  <li class="book-tab-item is-active" data-tab="book-tab1">
                     <button class="tab-button">인기도서</button>
                   </li>
-                  <li class="book-tab-item" data-tab="tab2">
+                  <li class="book-tab-item" data-tab="book-tab2">
                     <button class="tab-button">신간도서</button>
                   </li>
                 </ul>
                 <div class="book-content-wrapper">
-                  <div class="book-content is-select" id="tab1">
+                  <div class="book-content is-select" id="book-tab1">
                     <ul class="book-slide-list" id="best-book">
                       <li class="book-slide-item">
                         <a href="/">
@@ -519,7 +519,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="book-content" id="tab2">
+                  <div class="book-content" id="book-tab2">
                     <ul class="book-slide-list" id="new-book">
                       <li class="book-slide-item">
                         <a href="/">
@@ -640,6 +640,117 @@
                 </div>
               </div>
             </section>
+
+            <section class="notice main-content-section">
+              <ul class="notice-tab-list">
+                <li class="notice-tab-item is-active" data-tab="notice-tab1">
+                  <button type="button" class="tab-button">공지사항</button>
+                </li>
+                <li class="notice-tab-item" data-tab="notice-tab2">
+                  <button type="button" class="tab-button">보도자료</button>
+                </li>
+              </ul>
+
+              <div class="notice-content">
+                <div class="notice-content-wrapper is-select" id="notice-tab1">
+                  <ul class="notice-content-list">
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          &#91;Book택트:코로나 시대 온라인 독서습관&#93;
+                          전자자료 테마전시 &#40;2월&#41;
+                        </p>
+                        <time datetime="2021-01-28">2021-01-28</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          &#91;Book택트:코로나 시대 온라인 독서습관&#93; 전자책
+                          카드리뷰 &#40;2월&#41;
+                        </p>
+                        <time datetime="2021-01-28">2021-01-28</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          서울도서관 대출반납 등 서비스 일부 재개
+                          &#40;1.19.~&#41;
+                        </p>
+                        <time datetime="2021-01-18">2021-01-18</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          &#91;온라인전시&#93; '내 책 속 한 문장' 온라인 전시
+                        </p>
+                        <time datetime="2020-12-28">2020-12-28</time></a
+                      >
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          &#91;안내&#93; 서울도서관 찾아가는 랜선 회원가입!
+                        </p>
+                        <time datetime="2020-11-11">2020-11-11</time>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="notice-content-wrapper" id="notice-tab2">
+                  <ul class="notice-content-list">
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          &#40;석간&#41; 서울도서관, 코로나시대 전자책‧오디오북
+                          3배로 확대 홈피·모바일로 본다
+                        </p>
+                        <time datetime="2021-01-14">2021-01-14</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          서울도서관, 한국정보화진흥원과 협력 '소프트웨어코딩
+                          체험 특별교육' 운영
+                        </p>
+                        <time datetime="2020-11-30">2020-11-30</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          서울도서관, 책장 속에 잠들어 있는 헌책 나누는 온라인
+                          한평책방
+                        </p>
+                        <time datetime="2020-11-16">2020-11-16</time>
+                      </a>
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          서울도서관, 13일 포스트코로나 지역서점 방향 모색
+                          '제5회 서울서점인대회'
+                        </p>
+                        <time datetime="2020-11-09">2020-11-09</time></a
+                      >
+                    </li>
+                    <li class="notice-content-item">
+                      <a href="#"
+                        ><p>
+                          서울시, 독립출판 제작자-동네책방 함께 '온라인 독립출판
+                          북 페어'
+                        </p>
+                        <time datetime="2020-11-02">2020-11-02</time>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </div>
 
           <section class="library-schedule main-content-section">
@@ -690,8 +801,7 @@
                         <div class="textbox">
                           <span class="blue">도서관 갤러리</span>
                           <strong
-                            >&#91;책피는 서울도서관&#93; 전자책
-                            카드리뷰</strong
+                            >&#91;책피는 서울도서관&#93; 전자책 카드리뷰</strong
                           >
                         </div>
                       </a>
@@ -706,21 +816,20 @@
                         <div class="textbox">
                           <span class="blue">도서관 갤러리</span>
                           <strong
-                            >&#91;책피는 서울도서관&#93;
-                           북큐레이션</strong
+                            >&#91;책피는 서울도서관&#93; 북큐레이션</strong
                           >
                         </div>
                       </a>
                     </li>
                   </ul>
                   <div class="event-slider-controls">
-										<button type="button" class="prev-button">
-											<i class="ic-chevron"></i>
-										</button>
-										<button type="button" class="next-button">
-											<i class="ic-chevron"></i>
-										</button>
-									</div>
+                    <button type="button" class="prev-button">
+                      <i class="ic-chevron"></i>
+                    </button>
+                    <button type="button" class="next-button">
+                      <i class="ic-chevron"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div class="col-sm-4 col-md-6 col-lg-4">
@@ -1194,6 +1303,7 @@
     <script src="./js/gnbDepthOpen.js"></script>
     <script src="./js/sidebarTab.js"></script>
     <script src="./js/bookTab.js"></script>
+    <script src="./js/noticeTab.js"></script>
     <script src="./js/calendar.js"></script>
   </body>
 </html>
