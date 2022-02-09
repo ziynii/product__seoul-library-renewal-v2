@@ -1,4 +1,8 @@
 .calendar {
+  max-width: 340px;
+  margin-right: auto;
+  margin-left: auto;
+
   &-header {
     @include flexbox(between);
     margin-bottom: 16px;
