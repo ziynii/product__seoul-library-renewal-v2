@@ -8,7 +8,6 @@ const mainSlider = tns({
   mouseDrag: true,
 })
 
-
 const newBookSlider = tns({
   container: '#new-book',
   items: 2,
@@ -46,6 +45,21 @@ const bestBookSlider = tns({
     1024: {
       items: 5,
       gutter: 16,
+      edgePadding: 24,
+    },
+  },
+})
+
+const eventSlider = tns({
+  container: '.event-list',
+  items: 1,
+  loop: false,
+  controls: true,
+  controlsContainer: '.event .event-slider-controls',
+  preventScrollOnTouch: true,
+  responsive: {
+    1200: {
+      items: 2,
       edgePadding: 24,
     },
   },
