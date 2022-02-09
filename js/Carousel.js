@@ -1,3 +1,14 @@
+const mainSlider = tns({
+  container: '.main-slider-list',
+  navContainer: '.slider-control',
+  controls: false,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  preventScrollOnTouch: true,
+  mouseDrag: true,
+})
+
+
 const newBookSlider = tns({
   container: '#new-book',
   items: 2,
