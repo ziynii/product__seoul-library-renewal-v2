@@ -21,9 +21,9 @@
 @import './components/gnb';
 @import './components/overlay';
 @import './components/main-section';
-@import './components/library-schedule';
 @import './components/event';
 @import './components/calendar';
+@import './components/quick-link';
 
 @import './layouts/grids';
 @import './layouts/header';
@@ -32,4 +32,6 @@
 @import './layouts/sidebar';
 @import './layouts/book-tab';
 @import './layouts/notice-tab';
+@import './layouts/library-schedule';
+@import './layouts/quick-menu';
 @import './layouts/footer';
