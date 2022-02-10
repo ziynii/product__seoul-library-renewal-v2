@@ -37,8 +37,13 @@
 
         &.go-prev,
         &.go-next {
-          &:active i {
+          &:active,
+          &:hover i {
             color: $primary;
+          }
+
+          &:hover {
+            background-color: $background;
           }
         }
       }
