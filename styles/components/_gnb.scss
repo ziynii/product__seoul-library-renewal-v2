@@ -58,6 +58,10 @@
       @include text-style(14, $primary);
       margin-bottom: 8px;
 
+      &.is-link {
+        color: $blue;
+      }
+
       a {
         padding: 4px;
       }

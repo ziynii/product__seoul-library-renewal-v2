@@ -111,14 +111,19 @@
       @include text-style(14, $dark);
       width: 100%;
       padding: 14px 0;
-      font-weight: 700;
       text-align: center;
       background-color: $background;
       border-top: 1px solid $border;
       border-right: 1px solid $border;
 
+      button {
+        font-weight: 700;
+      }
+
       &.is-select {
-        color: $blue;
+        button {
+          color: $blue;
+        }
         background-color: $white;
         border-right: 0;
 
