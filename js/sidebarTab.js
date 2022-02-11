@@ -16,12 +16,13 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   sideBar.classList.remove('is-active')
   overlay.classList.remove('is-active')
+  depthTab.forEach((depth) => {
+    depth.classList.remove('is-open')
+  })
 })
 
 for (let i = 0; i < menuTab.length; i++) {
   menuTab[i].addEventListener('click', (e) => {
-    e.preventDefault()
-
     for (let j = 0; j < menuTab.length; j++) {
       menuTab[j].classList.remove('is-select')
 
