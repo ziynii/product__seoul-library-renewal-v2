@@ -1,5 +1,5 @@
 const allMenuOpenButtonList = document.querySelectorAll(
-  '.all-menu-title'
+  '.quick-menu-all.lg-hidden .all-menu-title'
 )
 
 allMenuOpenButtonList.forEach((allMenuButton) => {

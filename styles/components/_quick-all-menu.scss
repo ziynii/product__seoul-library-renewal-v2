@@ -72,4 +72,66 @@
       }
     }
   }
+
+  @include responsive(T) {
+    .all-menu {
+      &-wrapper {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-title {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-list {
+        @include flexbox(start);
+        flex-wrap: wrap;
+        max-height: 100%;
+        padding: 8px 0;
+
+        &.is-active {
+          padding: 8px 0;
+        }
+      }
+
+      &-item {
+        @include text-style(13);
+        width: 33%;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox(start, start);
+    height: 280px;
+
+    .all-menu {
+      &-wrapper {
+        width: 100%;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+
+      &-title {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-list {
+        @include flexbox(start);
+        flex-wrap: wrap;
+        max-height: 100%;
+      }
+
+      &-item {
+        @include text-style(14);
+				width: 50%;
+      }
+    }
+  }
 }
