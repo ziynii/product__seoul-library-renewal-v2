@@ -8,18 +8,22 @@ const depthTab = document.querySelectorAll('.side-depth-detail')
 const depthTitle = document.querySelectorAll('.side-depth-title')
 const overlay = document.querySelector('.overlay')
 
-menuBtn.addEventListener('click', () => {
+function openSidebar() {
   sideBar.classList.add('is-active')
   overlay.classList.add('is-active')
-})
+}
 
-closeBtn.addEventListener('click', () => {
+function closeSidebar() {
   sideBar.classList.remove('is-active')
   overlay.classList.remove('is-active')
   depthTab.forEach((depth) => {
     depth.classList.remove('is-open')
   })
-})
+}
+
+menuBtn.addEventListener('click', openSidebar)
+closeBtn.addEventListener('click', closeSidebar)
+overlay.addEventListener('click', closeSidebar)
 
 for (let i = 0; i < menuTab.length; i++) {
   menuTab[i].addEventListener('click', (e) => {
