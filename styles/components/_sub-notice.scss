@@ -1,0 +1,129 @@
+.notice-wapper {
+  width: 100%;
+
+  .notice-search {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &-select,
+    &-input {
+      width: 100%;
+      padding: 8px;
+      overflow: hidden;
+      border: 1px solid $border;
+      border-radius: 4px;
+    }
+
+    &-select {
+      margin-bottom: 4px;
+    }
+
+    &-input {
+      position: relative;
+
+      .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 60px;
+        height: 100%;
+        color: $white;
+        background-color: $blue-dark;
+      }
+    }
+  }
+
+  .notice-board {
+    width: 100%;
+    margin-bottom: 48px;
+
+    .summary {
+      padding: 8px 0;
+      border-bottom: 3px solid $blue-dark;
+    }
+
+    .board_list {
+      border-collapse: collapse;
+
+      thead {
+        td {
+          @include text-style(16, $primary);
+          padding: 8px 0;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+
+      tbody {
+        tr {
+          height: 48px;
+          border-bottom: 1px solid $border;
+
+          &:first-child {
+            border-top: 2px solid $blue-dark;
+          }
+
+          &:active {
+            background-color: $background;
+          }
+        }
+
+        td {
+          @include text-style(14, $primary);
+          padding: 0;
+          text-align: center;
+
+          &.list-all {
+            p {
+              color: $white;
+              background-color: $blue;
+              border-radius: 2px;
+            }
+          }
+
+          .board-item-title {
+            display: table;
+            width: 90%;
+            margin-left: 8px;
+            text-align: left;
+            white-space: nowrap;
+            table-layout: fixed;
+
+            > a {
+              @include text-style(14, $primary);
+              display: table-cell;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .notice-search {
+      width: 60%;
+      margin-top: 24px;
+      margin-bottom: -26px;
+      margin-left: auto;
+
+      .notice-search-form {
+        @include flexbox(end);
+      }
+
+      &-select,
+      &-input {
+        @include text-style(13);
+        height: 38px;
+      }
+
+      &-select {
+        width: 30%;
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
