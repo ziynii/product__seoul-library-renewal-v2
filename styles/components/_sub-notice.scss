@@ -40,13 +40,17 @@
 
     .summary {
       padding: 8px 0;
-      border-bottom: 3px solid $blue-dark;
     }
 
     .board_list {
       border-collapse: collapse;
 
       thead {
+        tr {
+          border-top: 2px solid $blue-dark;
+          border-bottom: 1px solid $blue-dark;
+        }
+
         td {
           @include text-style(16, $primary);
           padding: 8px 0;
@@ -59,10 +63,6 @@
         tr {
           height: 48px;
           border-bottom: 1px solid $border;
-
-          &:first-child {
-            border-top: 2px solid $blue-dark;
-          }
 
           &:active {
             background-color: $background;
@@ -123,6 +123,22 @@
         width: 30%;
         margin-right: 8px;
         margin-bottom: 0;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .notice-board {
+      .board_list {
+        tbody {
+          tr:hover {
+            background-color: $background;
+          }
+
+          .board-item-title a:hover {
+            color: $blue;
+          }
+        }
       }
     }
   }
