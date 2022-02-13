@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공지사항</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="header-user-nav lg-only">
+              <ul class="user-nav-list">
+                <li class="user-nav-item"><a href="#">로그인</a></li>
+                <li class="user-nav-item"><a href="#">회원가입</a></li>
+                <li class="user-nav-item"><a href="#">나의공간</a></li>
+                <li class="user-nav-item"><a href="#">비대면 자격확인</a></li>
+              </ul>
+            </div>
+
+            <div class="header-wrapper">
+              <div class="header-menu lg-hidden">
+                <button type="button" aria-label="메뉴 열기 버튼">
+                  <i class="ic-menu"></i>
+                </button>
+              </div>
+
+              <div class="header-logo">
+                <a href="../index.html">
+                  <img
+                    src="../assets/images/header-logo.svg"
+                    alt="서울도서관 로고"
+                  />
+                </a>
+              </div>
+
+              <nav class="gnb-nav lg-only">
+                <h2 class="visually-hidden">메뉴</h2>
+                <ul class="gnb-nav-list">
+                  <li class="gnb-nav-item">
+                    <a href="#">자료검색</a>
+                    <div class="gnb-depth">
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">소장자료</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">소장자료 검색</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">DVD 검색</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">연속간행물 검색</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">전자책·오디오북</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">구독학술 DB</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">협력기관 DB</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">서울자료</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울시 발간물</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">OAK 리포지터리</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울 관련 웹사이트</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">책! 책! 책!</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">새로 들어온 책</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">대출이 많은 책</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">전시된 책</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">지식문화콘텐츠</li>
+                        <li class="gnb-depth-item"><a href="#">공공정보</a></li>
+                        <li class="gnb-depth-item"><a href="#">일상정보</a></li>
+                        <li class="gnb-depth-item"><a href="#">전문정보</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="gnb-nav-item">
+                    <a href="#">도서관 이용</a>
+                    <div class="gnb-depth">
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">이용안내</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">도서관 이용시간</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">회원증 발급</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">대출·반납·연장·예약</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">보존서고 자료</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">구독학술 DB</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">시설·기기 이용</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">도서관 이용예절</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">자료실 안내</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">일반자료실</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">디지털자료실</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울자료실</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">세계자료실</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">장애인자료실</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">디지털 사회혁신센터</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">특별전시공간</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울기록 문화관</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">옛시장실 복원 공간</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">함께하는 서비스</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">책이음 서비스</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">책바다 서비스</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">책나래 서비스</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">외국학술지 원문 복사</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">사서에게 물어보세요</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">도서관 정보나루</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="gnb-nav-item">
+                    <a href="#">신청·참여</a>
+                    <div class="gnb-depth">
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">신청</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">희망도서 신청</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">강좌 신청</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">분실물 찾기</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">단체방문 신청</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">자원봉사 신청</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">참여</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울도서관에 바란다</a>
+                        </li>
+                        <li class="gnb-depth-item is-link">
+                          <a href="./qna.html">자주 물어보는 질문</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울에게 물어보세요</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">자료기증·납본</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">설문조사</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="gnb-nav-item">
+                    <a href="#">도서관 소개</a>
+                    <div class="gnb-depth">
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">도서관 소개</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">인사말</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">일반 현황</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">로고</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">조직·기구</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">운영규정</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">찾아오시는 길</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">도서관 소식</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">공지사항</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">보도자료</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">도서관 갤러리</a>
+                        </li>
+                        <li class="gnb-depth-item">
+                          <a href="#">서울도서관 TV</a>
+                        </li>
+                      </ul>
+
+                      <ul class="gnb-depth-list">
+                        <li class="gnb-depth-title">도서관 일정</li>
+                        <li class="gnb-depth-item">
+                          <a href="#">일정 및 행사</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="sub-page-content notice-content">
+      <div class="content-wrapper">
+        <div class="notice-title content-title">
+          <i class="ic-chevron"></i>
+          <h2>공지사항</h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="notice-wapper">
+                <div class="notice-search">
+                  <form class="notice-search-form" action="search">
+                    <select class="notice-search-select" name="search">
+                      <option>제목</option>
+                      <option>내용</option>
+                      <option>제목 + 내용</option>
+                    </select>
+                    <div class="notice-search-input">
+                      <input type="text" placeholder="검색어를 입력하세요" />
+                      <button type="button" class="search-button">검색</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="notice-board">
+                  <p class="summary"><strong>총 807건</strong>, 1/88페이지</p>
+                  <table class="board_list">
+                    <colgroup>
+                      <col width="5%" />
+                      <col width="40%" />
+                      <col width="15%" class="sm-hidden"/>
+                      <col width="15%" />
+                      <col width="15%" class="sm-hidden"/>
+                      <col width="5%" class="sm-hidden"/>
+                    </colgroup>
+
+                    <thead>
+                      <tr>
+                        <td>NO.</td>
+                        <td>제목</td>
+                        <td class="sm-hidden">작성자</td>
+                        <td>작성일</td>
+                        <td class="sm-hidden">조회수</td>
+                        <td class="sm-hidden">파일</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>&#91;Book택트:코로나 시대 온라인 독서습관&#93;
+															전자자료 테마전시 &#40;2월&#41;</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-28</td>
+                        <td class="sm-hidden">255</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>&#91;Book택트:코로나 시대 온라인 독서습관&#93;
+															전자책 카드리뷰 &#40;2월&#41;</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-28</td>
+                        <td class="sm-hidden">90</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>서울도서관 대출반납 등 서비스 일부 재개
+															&#40;1.19.~&#41;</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-18</td>
+                        <td class="sm-hidden">6122</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>&#91;온라인전시&#93; '내 책 속 한 문장' 온라인
+															전시</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-12-28</td>
+                        <td class="sm-hidden">1864</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>&#91;안내&#93; 서울도서관 찾아가는 랜선
+															회원가입!</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-11-11</td>
+                        <td class="sm-hidden">1077</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td class="list-all"><p>상시</p></td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>서울 생활권 직장인과 재학생 대상 온라인 회원증
+															발급서비스 시행 안내
+															&#40;'20.9.22.&#40;화&#41;~&#41;</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-09-21</td>
+                        <td class="sm-hidden">2333</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td>807</td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>&#91;10:20 재개&#93; 1월 13일 택배 대출 서비스
+															재공지</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-13</td>
+                        <td class="sm-hidden">652</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td>806</td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>서울도서관 한시적 택배대출서비스 이용안내
+															&#40;1.13~1.15&#41;</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-12</td>
+                        <td class="sm-hidden">4102</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td>805</td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>구독형 전자책·오디오북 대출권수 확대 안내</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-07</td>
+                        <td class="sm-hidden">1867</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                      <tr>
+                        <td>804</td>
+                        <td>
+                          <div class="board-item-title">
+														<a href="#"
+															>서울도서관 통합전자책 뷰어 앱 업데이트 안내</a
+														>
+													</div>
+                        </td>
+                        <td class="sm-hidden">정보서비스과</td>
+                        <td>2021-01-07</td>
+                        <td class="sm-hidden">683</td>
+                        <td class="sm-hidden"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <ol class="page-list">
+          <li class="page-item is-active"><a href="#">1</a></li>
+          <li class="page-item"><a href="#">2</a></li>
+          <li class="page-item"><a href="#">3</a></li>
+          <li class="page-item"><a href="#">4</a></li>
+          <li class="page-item"><a href="#">5</a></li>
+        </ol>
+        <button class="page-control page-next">
+          <i class="ic-chevron"></i>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="footer-top">
+              <div class="footer-top-left">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영·관리 방침</a>
+              </div>
+
+              <div class="footer-top-right">
+                <div class="sns-link sm-hidden">
+                  <a href="#"><i class="ic-facebook"></i></a>
+                  <a href="#"><i class="ic-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-content">
+              <div class="footer-logo">
+                <img
+                  src="../assets/images/footer-logo.svg"
+                  alt="서울도서관 로고"
+                />
+              </div>
+
+              <div class="footer-info">
+                <dl>
+                  <div class="time">
+                    <dt>이용시간</dt>
+                    <dd>화-금 09:00 ~ 19:00 / 토,일 09:00 ~ 17:00</dd>
+                  </div>
+                  <div class="off">
+                    <dt>휴관</dt>
+                    <dd>월요일, 공휴일 휴관</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <aside class="side-menu lg-hidden">
+      <div class="side-menu-header">
+        <button class="close-button" type="button">
+          <i class="ic-close"></i>
+        </button>
+
+        <div class="auth">
+          <div class="auth-text">
+            <i class="ic-user"></i>
+            <p>
+              편리한 이용을 위해 <br />
+              로그인 또는 회원가입을 해주세요.
+            </p>
+          </div>
+
+          <div class="auth-buttons">
+            <button class="btn-blue" type="button">
+              <a href="#">로그인</a>
+            </button>
+            <button class="btn-outline" type="button">
+              <a href="#">회원가입</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <form class="side-menu-search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="검색어를 입력하세요"
+        />
+        <button class="search-button">
+          <i class="ic-search"></i>
+        </button>
+      </form>
+
+      <div class="side-menu-nav">
+        <ul class="side-menu-list">
+          <li class="side-menu-item is-select">
+            <button type="button">자료검색</button>
+            <div class="side-depth-wrap">
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>소장자료</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">소장자료 검색</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">DVD 검색</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">연속간행물 검색</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">전자책·오디오북</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">구독학술 DB</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">협력기관 DB</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>서울자료</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">서울시 발간물</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">OAK 리포지터리</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">서울 관련 웹사이트</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>책! 책! 책!</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">새로 들어온 책</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">대출이 많은 책</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">전시된 책</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>지식문화콘텐츠</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item"><a href="#">공공정보</a></li>
+                    <li class="side-depth-item"><a href="#">일상정보</a></li>
+                    <li class="side-depth-item"><a href="#">전문정보</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-menu-item">
+            <button type="button">도서관 이용</button>
+            <div class="side-depth-wrap">
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>이용안내</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">도서관 이용시간</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">회원증 발급</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">대출·반납·연장·예약</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">보존서고 자료</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">구독학술 DB</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">시설·기기 이용</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">도서관 이용예절</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>자료실 안내</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">일반자료실</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">디지털자료실</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">서울자료실</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">세계자료실</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">장애인자료실</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">디지털 사회혁신센터</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>특별전시공간</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">서울기록 문화관</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">옛시장실 복원 공간</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>함께하는 서비스</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">책이음 서비스</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">책바다 서비스</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">책나래 서비스</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">외국학술지 원문 복사</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">사서에게 물어보세요</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">도서관 정보나루</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-menu-item">
+            <button type="button">신청·참여</button>
+            <div class="side-depth-wrap">
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>신청</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">희망도서 신청</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">강좌 신청</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">분실물 찾기</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">단체방문 신청</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">자원봉사 신청</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>참여</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">서울도서관에 바란다</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="../subpage/qna.html">자주 물어보는 질문</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">서울에게 물어보세요</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">자료기증·납본</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">설문조사</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="side-menu-item">
+            <button type="button">도서관 소개</button>
+            <div class="side-depth-wrap">
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>도서관 소개</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">인사말</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">일반 현황</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">로고</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">조직·기구</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">운영규정</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">찾아오시는 길</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>도서관 소식</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">공지사항</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">보도자료</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">도서관 갤러리</a>
+                    </li>
+                    <li class="side-depth-item">
+                      <a href="#">서울도서관 TV</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="side-depth">
+                <li class="side-depth-detail">
+                  <div class="side-depth-title">
+                    <h4>도서관 일정</h4>
+                    <i class="ic-chevron"></i>
+                  </div>
+                  <ul class="side-depth-list">
+                    <li class="side-depth-item">
+                      <a href="#">일정 및 행사</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="overlay md-only"></div>
+
+    <script src="../js/gnbDepthOpen.js"></script>
+    <script src="../js/sidebarTab.js"></script>
+  </body>
+</html>
