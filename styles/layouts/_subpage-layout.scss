@@ -60,6 +60,10 @@
     padding: 48px 0;
     margin-top: 140px;
 
+    .lnb {
+      margin-right: 48px;
+    }
+
     .align-box {
       @include flexbox(start, start);
     }
