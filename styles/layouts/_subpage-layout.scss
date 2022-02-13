@@ -1,0 +1,29 @@
+.sub-page-content {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .content-title {
+    position: relative;
+    width: 100%;
+    padding: 8px 0;
+    margin-bottom: 48px;
+    background-color: $blue-dark;
+
+    i {
+      @include pos-center-y;
+      left: 15px;
+      font-size: 18px;
+      color: $white;
+      transform: rotate(90deg) translateX(-50%);
+    }
+
+    h2 {
+      @include text-style(18, $white);
+      text-align: center;
+    }
+  }
+
+  @include responsive(T) {
+    margin-top: 80px;
+  }
+}
