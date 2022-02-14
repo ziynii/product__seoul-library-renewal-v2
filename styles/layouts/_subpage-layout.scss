@@ -52,8 +52,64 @@
     }
   }
 
+  .sub-search {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &-select,
+    &-input {
+      width: 100%;
+      padding: 8px;
+      overflow: hidden;
+      border: 1px solid $border;
+      border-radius: 4px;
+    }
+
+    &-select {
+      margin-bottom: 4px;
+    }
+
+    &-input {
+      position: relative;
+
+      .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 60px;
+        height: 100%;
+        color: $white;
+        background-color: $blue-dark;
+      }
+    }
+  }
+
   @include responsive(T) {
     margin-top: 80px;
+
+    .sub-search {
+      width: 60%;
+      margin-top: 24px;
+      margin-bottom: -26px;
+      margin-left: auto;
+
+      .sub-search-form {
+        @include flexbox(end);
+      }
+
+      &-select,
+      &-input {
+        @include text-style(13);
+        height: 38px;
+      }
+
+      &-select {
+        width: 30%;
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
   }
 
   @include responsive(D) {
