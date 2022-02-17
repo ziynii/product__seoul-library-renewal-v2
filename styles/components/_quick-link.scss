@@ -9,6 +9,10 @@
       padding: 24px 15px;
       border-bottom: 1px solid $border;
 
+      &:hover {
+        background-color: $border;
+      }
+
       &:last-child {
         border-bottom: 0;
       }
