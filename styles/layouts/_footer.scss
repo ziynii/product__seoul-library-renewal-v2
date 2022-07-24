@@ -48,17 +48,8 @@
   }
 
   &-content {
-    @include column-flexbox(center, start);
+    @include column-flexbox(start, start);
     padding: 24px 0 48px;
-
-    .footer-logo {
-      width: 140px;
-      margin-bottom: 8px;
-
-      img {
-        width: 100%;
-      }
-    }
 
     .footer-info {
       @include text-style(13);
@@ -79,7 +70,6 @@
   @include responsive(T) {
     .footer-content {
       align-items: center;
-      flex-direction: row;
 
       .footer-logo {
         margin-right: 16px;
