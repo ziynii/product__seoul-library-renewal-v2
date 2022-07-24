@@ -24,11 +24,11 @@ const faviconFileList = [
 ]
 
 const faviconUrlList = [
-  '/apple-touch-icon.png',
-  '/favicon-32x32.png',
-  '/favicon-16x16.png',
-  '/site.webmanifest',
-  '/safari-pinned-tab.svg',
+  '../assets/favicon/apple-touch-icon.png',
+  '../assets/favicon/favicon-32x32.png',
+  '../assets/favicon/favicon-16x16.png',
+  '../assets/favicon/site.webmanifest',
+  '../assets/favicon/safari-pinned-tab.svg',
 ]
 
 function throwError(err) {
@@ -81,7 +81,7 @@ function copyFavicons() {
   faviconFileList.forEach((filename) => {
     copySync(
       path.resolve(__dirname, `../assets/favicon/${filename}`),
-      path.join(buildDir, filename)
+      path.join(buildDir, `assets/favicon/${filename}`)
     )
   })
 }
@@ -116,6 +116,10 @@ async function build() {
   copySync(
     path.resolve(__dirname, '../index.html'),
     path.join(buildDir, 'index.html')
+  )
+  copySync(
+    path.resolve(__dirname, '../subpage'),
+    path.join(buildDir, 'subpage')
   )
   copySync(path.resolve(__dirname, '../js'), path.join(buildDir, 'js'))
   copySync(
