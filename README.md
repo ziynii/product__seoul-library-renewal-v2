@@ -1,4 +1,4 @@
-### ✨ 소개
+### │ 소개
 
 서울도서관 웹사이트를 리디자인 후 반응형으로 제작했습니다
 
@@ -6,7 +6,7 @@ Figma를 사용해 디자인 작업을 진행했고,
 
 Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 추가했습니다
 
-### ✨ Link
+### │ Link
 
 **🔗 github**
 
@@ -16,7 +16,7 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 [https://ziynii.github.io/project__seoul-library-renewal-v2/](https://ziynii.github.io/project__seoul-library-renewal-v2/)
 
-### ✨ Skill
+### │ Skill
 
 🔸 **HTML**
 
@@ -26,7 +26,7 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 <br />
 
-### ✨ Desktop
+### │ Desktop
 
 🔸 **홈**
 
@@ -43,7 +43,7 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 <br />
 
 
-### ✨ Tablet
+### │ Tablet
 
 🔸 **홈**
 
@@ -64,7 +64,7 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 <br />
 
 
-### ✨ Mobile
+### │ Mobile
 
 🔸 **홈**
 
